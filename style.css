@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: aliceblue;
+}
+
+div {
+    width: 300px; /* largura do container do formulário */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: calc(100% - 16px);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para telas pequenas */
+@media (max-width: 600px) {
+    div {
+        width: 90%;
+    }
+}
